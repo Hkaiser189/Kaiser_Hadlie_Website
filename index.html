@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildflower - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+
+<body>
+    <aside id="side-menu" class="side-menu btn">
+        <button class="close-menu" onclick="closeNav()">
+            <span class="material-symbols-outlined">
+                close
+                </span>
+        </button>
+        <div id="menu-links" class="menu-links">
+            <a href="#">Menu</a>
+            <a href="#">Reservations</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </aside>
+
+    <header class="header">
+        <img src="images/wildflowerlogo.png" width="180" alt="Wildflower Logo">
+        <nav class="nav">
+            <a href="#" class="nav-link">Menu</a>
+            <a href="#" class="nav-link">Reservations</a>
+            <a href="#" class="nav-link">Contact Us</a>
+        </nav>
+        <div class="h-menu" onclick="openNav()">
+                <span class="material-symbols-outlined">menu</span>
+        </div>
+    </header>
+    
+
+    <!-- intro section -->
+    <section class="hero-image">
+        <div class="hours">
+            <h4 class="clear-margin">Restaurant Hours</h4>
+            <p class="clear-margin">Mon-Sun: 8am-8pm</p>
+        </div>
+        <div class="container">
+            <div class="hero-text">
+                <h1 class="title clear-margin">Gather. Indulge. Enjoy</h1>
+                <p class="description">At Wildflower, we believe in more than just serving delicious food; we’re dedicated to making a positive impact in our community. With a warm and inviting atmosphere, our restaurant is the perfect place to gather with friends and family.</p>
+                <a href="#" class="btn">Book Your Table</a>
+            </div>
+        </div>
+    </section>
+    <!-- Menus section -->
+    <section>
+        <article class="text-center" onclick="openPopup()">
+            <span id="Popup" class="popup">Breakfast Bowls, Sandwiches, Pastas and more!</span>
+
+            <h2 class="margin">Menus</h2>
+        </article>
+        <div class="flex-container flex-wrap">
+            <div class="col-lg-3 bottom-margin">
+                <article class="section-image breakfast-image">
+                    <h3>Breakfast</h3>
+                </article>
+            </div>
+            <div class="col-lg-3 bottom-margin">
+                <article class="section-image lunch-image">
+                    <h3>Lunch</h3>
+                </article>
+            </div>
+            <div class="col-lg-3 bottom-margin">
+                <article class="section-image dinner-image">
+                    <h3>Dinner</h3>
+                </article>
+            </div>
+            <div class="col-lg-3 bottom-margin">
+                <article class="section-image dessert-image">
+                    <h3>Dessert</h3>
+                </article>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Mission -->
+    <section class="background-color-white">
+        <div class="reviews">
+            <div class="container">
+                <article class="text-center mission">
+                    <h2 class="color h2spacing">Our Mission</h2>
+                    <p class="pmargin">We believe that giving back to the community is essential. That’s why we established the Wildflower Cares Foundation. Since 1996, we have been committed to supporting local organizations through volunteer work, fundraising events, and donations. Each year, we collaborate with a diverse range of non-profits, focusing on key areas such as poverty and hunger relief, children's wellness, women’s empowerment, literacy and education, and animal advocacy.</p>
+                </article>
+            </div>
+            <div class="flex-container flex-wrap">
+                <div class="col-lg-4 col-md-12 text-center bottom-margin">
+                    <div class="box">
+                        <article>
+                            <img class="margin" src="images/5star.png" width="180" alt="five stars">
+                            <h2 class="clear-margin">Casey</h2>
+                            <p class="clear-margin">“Food is fantastic. If you're in the area it is a must eat do not pass you will regret it. Fantastic atmosphere, friendly staff and of course food is excellent.”</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center bottom-margin">
+                    <div class="box">
+                    <article>
+                        <img class="margin" src="images/5star.png" width="180" alt="five stars">
+                        <h2 class="clear-margin">Rich</h2>
+                        <p class="clear-margin">“Great service, quality food. I have always had a great and affordable lunch when I come here. I've been to 2 locations and they were equally as good.”</p>
+                    </article>
+                </div>
+                </div>
+                    <div class="col-lg-4 col-md-12 text-center bottom-margin">
+                        <div class="box">
+                            <article>
+                                <img class="margin" src="images/5star.png" width="180" alt="five stars">
+                                <h2 class="clear-margin">Carrie</h2>
+                                <p class="clear-margin">“Service was super nice and quick. They had something for everyone- even our picky eaters. The butternut squash was delicious and I wish I had more!”</p>
+                            </article>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="row justify-center">
+            <div class="col-lg-10 no-pad">
+                <form action="https://formsubmit.co/hkaiser02@icloud.com" method="POST" class="signup-form">
+                    <div>
+                        <h4>Join Our Rewards Program!</h4>
+                        <h5>Sign up today and start enjoying exclusive perks, discounts, and special offers!</h5>
+                     </div>
+                    <div class="margin-bottom">
+                        <label>First name</label><br>
+                        <input type="text" name="First name" placeholder="Joe">
+                    </div>
+                    <div class="margin-bottom">
+                        <label>Last name</label><br>
+                        <input type="text" name="Last name" placeholder="Smith">
+                    </div>
+                    <div class="margin-bottom">
+                        <label>Email</label><br>
+                        <input type="email" name="Email" placeholder="email@email.com">
+                    </div>
+                    <div class="margin-bottom">
+                        <label>Phone number</label><br>
+                        <input type="tel" name="Phone number" placeholder="(xxx) xxx-xxxx">
+                    </div>
+                    <label>Comments</label><br>
+                    <textarea name="Comments and Questions" placeholder="Enter message here" class="contact-info"></textarea><br>
+                    <button type="submit" class="btnn">Sign up!</button>
+                </form>
+            </div>
+        </section>
+
+    <footer>
+        <p>5813 North 7th Street</p>
+        <p>Phoenix, AZ 850114</p>
+        <p class="spacing">(602) 883-4758</p>
+    <!-- Social Media -->
+        <a href="https://www.facebook.com/WildflowerBread">
+            <img src="images/facebook.png" height="50" alt="Links to Facebook">
+        </a>
+        <a href="https://www.instagram.com/wildflowerbread">
+            <img src="images/instagram.png" height="50" alt="Links to Instagram">
+        </a>
+        <a href="https://x.com/wildflowerbread">
+            <img src="images/twitter.png" height="50" alt="Links to Twitter">
+        </a>
+        <a href="https://www.yelp.com/search?find_desc=Wildflower+Bread&find_loc=Arizona">
+            <img src="images/yelp.png" height="50" alt="Links to Yelp">
+        </a>
+    </footer>
+    <script>
+        function closeNav() {
+            document.getElementById("side-menu").style.width = "0";
+        }
+        function openNav() {
+            document.getElementById("side-menu").style.width = "250px";
+        }
+        function openPopup() {
+            var popup = document.getElementById("Popup");
+            popup.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
